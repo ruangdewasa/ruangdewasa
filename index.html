@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ruang Dewasa — relationship, dating, komunikasi pasangan, edukasi dan lifestyle dewasa.">
+  <meta name="theme-color" content="#111827">
+  <title>Ruang Dewasa — Relationship & Lifestyle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="age-gate" id="ageGate" aria-modal="true" role="dialog">
+    <div class="age-card">
+      <div class="age-icon">18+</div>
+      <h2>Selamat datang di Ruang Dewasa</h2>
+      <p>Website ini ditujukan untuk pengunjung berusia 18 tahun ke atas. Konten bersifat edukatif, relationship, dan lifestyle dewasa.</p>
+      <div class="age-actions">
+        <button class="btn primary" id="enterBtn">Saya berusia 18+</button>
+        <button class="btn ghost" id="leaveBtn">Keluar</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="brand-mark">R</span>
+        <span>RUANG<span class="accent">DEWASA</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+      <nav id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#trending">Trending</a>
+        <a href="#categories">Kategori</a>
+        <a href="#articles">Artikel</a>
+        <a href="#about">Tentang</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">18+ • RELATIONSHIP • LIFESTYLE</span>
+          <h1>Perspektif baru untuk <span>hubungan yang lebih sehat.</span></h1>
+          <p class="hero-text">Baca artikel ringan tentang komunikasi, dating, relationship, edukasi dewasa, dan kehidupan pasangan.</p>
+          <div class="search">
+            <span>⌕</span>
+            <input id="searchInput" type="search" placeholder="Cari artikel..." autocomplete="off">
+            <button id="searchBtn">Cari</button>
+          </div>
+          <div class="hero-tags">
+            <button class="tag" data-filter="Relationship">Relationship</button>
+            <button class="tag" data-filter="Dating">Dating</button>
+            <button class="tag" data-filter="Komunikasi">Komunikasi</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="hero-orb"></div>
+          <div class="hero-card-content">
+            <span>ARTIKEL PILIHAN</span>
+            <h3>Hubungan yang sehat dimulai dari komunikasi yang sehat.</h3>
+            <p>Temukan cara sederhana membangun percakapan yang lebih terbuka dengan pasangan.</p>
+            <a href="#articles" class="read-link">Baca sekarang →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ad-slot container" aria-label="Area iklan">
+      <small>ADVERTISEMENT</small>
+      <div class="ad-placeholder">Tempat iklan Adsterra</div>
+    </div>
+
+    <section class="section" id="trending">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">PALING DIBACA</span>
+            <h2>Trending sekarang</h2>
+          </div>
+          <button class="text-btn" id="showAllBtn">Lihat semua →</button>
+        </div>
+        <div class="featured-grid">
+          <article class="featured-card featured-main">
+            <div class="card-image gradient-one"><span>RELATIONSHIP</span></div>
+            <div class="card-body">
+              <div class="meta">6 menit baca • 18+</div>
+              <h3>5 kebiasaan kecil yang bisa membuat komunikasi pasangan lebih nyaman</h3>
+              <p>Hal sederhana yang sering terlupakan ketika hubungan mulai terasa rutin.</p>
+              <button class="article-btn" data-title="5 kebiasaan kecil yang bisa membuat komunikasi pasangan lebih nyaman">Baca artikel →</button>
+            </div>
+          </article>
+          <article class="featured-card">
+            <div class="card-image gradient-two"><span>DATING</span></div>
+            <div class="card-body">
+              <div class="meta">4 menit baca • 18+</div>
+              <h3>Bagaimana membangun batasan yang sehat saat dating?</h3>
+              <p>Batasan membantu dua orang saling memahami tanpa kehilangan ruang pribadi.</p>
+              <button class="article-btn" data-title="Bagaimana membangun batasan yang sehat saat dating?">Baca →</button>
+            </div>
+          </article>
+          <article class="featured-card">
+            <div class="card-image gradient-three"><span>KOMUNIKASI</span></div>
+            <div class="card-body">
+              <div class="meta">5 menit baca • 18+</div>
+              <h3>Kalimat yang membantu saat sedang berbeda pendapat</h3>
+              <p>Fokus pada masalah tanpa menjadikan pasangan sebagai musuh.</p>
+              <button class="article-btn" data-title="Kalimat yang membantu saat sedang berbeda pendapat">Baca →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="categories">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">JELAJAHI</span>
+            <h2>Pilih topik</h2>
+          </div>
+        </div>
+        <div class="category-grid">
+          <button class="category" data-filter="Relationship"><b>❤️</b><span><strong>Relationship</strong><small>Hubungan & pasangan</small></span>→</button>
+          <button class="category" data-filter="Dating"><b>💬</b><span><strong>Dating</strong><small>Kencan & mengenal pasangan</small></span>→</button>
+          <button class="category" data-filter="Komunikasi"><b>🗣️</b><span><strong>Komunikasi</strong><small>Percakapan yang lebih sehat</small></span>→</button>
+          <button class="category" data-filter="Edukasi"><b>🧠</b><span><strong>Edukasi Dewasa</strong><small>Informasi untuk orang dewasa</small></span>→</button>
+          <button class="category" data-filter="Lifestyle"><b>✨</b><span><strong>Lifestyle</strong><small>Gaya hidup & keseharian</small></span>→</button>
+          <button class="category" data-filter="Perspektif"><b>📖</b><span><strong>Perspektif</strong><small>Cerita & sudut pandang</small></span>→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="articles">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">ARTIKEL TERBARU</span>
+            <h2>Temukan bacaanmu</h2>
+          </div>
+          <span class="result-count" id="resultCount"></span>
+        </div>
+        <div class="article-grid" id="articleGrid">
+          <article class="article-card" data-category="Relationship" data-title="Tanda hubungan membutuhkan percakapan serius">
+            <div class="thumb t1">❤️</div><div><span class="pill">Relationship</span><h3>Tanda hubungan membutuhkan percakapan serius</h3><p>Kenali pola komunikasi yang mulai membuat hubungan terasa berat.</p><span class="meta">5 menit • 18+</span></div>
+          </article>
+          <article class="article-card" data-category="Dating" data-title="Kencan pertama tanpa tekanan">
+            <div class="thumb t2">💬</div><div><span class="pill">Dating</span><h3>Kencan pertama tanpa tekanan: fokus pada mengenal</h3><p>Beberapa cara membuat obrolan pertama terasa lebih natural.</p><span class="meta">4 menit • 18+</span></div>
+          </article>
+          <article class="article-card" data-category="Komunikasi" data-title="Cara mendengarkan pasangan">
+            <div class="thumb t3">🗣️</div><div><span class="pill">Komunikasi</span><h3>Cara mendengarkan pasangan tanpa langsung menghakimi</h3><p>Mendengar bukan sekadar menunggu giliran berbicara.</p><span class="meta">6 menit • 18+</span></div>
+          </article>
+          <article class="article-card" data-category="Edukasi" data-title="Consent dan batasan dalam hubungan">
+            <div class="thumb t4">🧠</div><div><span class="pill">Edukasi</span><h3>Consent dan batasan: dasar hubungan yang saling menghormati</h3><p>Memahami persetujuan, kenyamanan, dan hak untuk berkata tidak.</p><span class="meta">7 menit • 18+</span></div>
+          </article>
+          <article class="article-card" data-category="Lifestyle" data-title="Quality time yang sederhana">
+            <div class="thumb t5">✨</div><div><span class="pill">Lifestyle</span><h3>Quality time tidak harus mahal</h3><p>Ide sederhana untuk menghabiskan waktu berkualitas bersama.</p><span class="meta">3 menit • 18+</span></div>
+          </article>
+          <article class="article-card" data-category="Perspektif" data-title="Ruang pribadi dalam hubungan">
+            <div class="thumb t6">📖</div><div><span class="pill">Perspektif</span><h3>Mengapa ruang pribadi tetap penting setelah punya pasangan?</h3><p>Kedekatan dan kemandirian bisa berjalan bersama.</p><span class="meta">5 menit • 18+</span></div>
+          </article>
+        </div>
+        <div id="emptyState" class="empty" hidden>Artikel tidak ditemukan. Coba kata kunci lain.</div>
+      </div>
+    </section>
+
+    <div class="ad-slot container" aria-label="Area iklan kedua">
+      <small>ADVERTISEMENT</small>
+      <div class="ad-placeholder">Tempat iklan Adsterra</div>
+    </div>
+
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div><span class="eyebrow">UPDATE</span><h2>Artikel baru, langsung ke inbox.</h2><p>Form ini masih demo dan belum terhubung ke email marketing.</p></div>
+        <form id="newsletterForm"><input type="email" placeholder="Email kamu" required><button class="btn primary">Daftar</button></form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="about">
+    <div class="container footer-grid">
+      <div><a class="brand" href="#"><span class="brand-mark">R</span><span>RUANG<span class="accent">DEWASA</span></span></a><p>Ruang informasi untuk relationship, dating, komunikasi, edukasi dan lifestyle dewasa.</p></div>
+      <div><h4>Menu</h4><a href="#articles">Artikel</a><a href="#categories">Kategori</a><a href="#about">Tentang</a></div>
+      <div><h4>Informasi</h4><a href="#">Privacy Policy</a><a href="#">Disclaimer</a><a href="#">Kontak</a></div>
+    </div>
+    <div class="container copyright">© 2026 Ruang Dewasa. Konten ditujukan untuk pembaca 18+.</div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
